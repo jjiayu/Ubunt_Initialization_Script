@@ -11,8 +11,10 @@ sudo apt-get install terminator -y
 #Install Git
 sudo apt-get install git -y
 
-#Disable Screen Lock
+#Disable Screen Suspension
 gsettings set org.gnome.desktop.session idle-delay 0
-gsettings set org.gnome.desktop.screensaver lock-enabled false
+
+#No need to disable lock, because system continue to work in background
+#gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 

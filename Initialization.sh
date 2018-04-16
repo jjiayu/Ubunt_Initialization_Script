@@ -14,7 +14,7 @@ sudo apt-get install git -y
 #Disable Screen Suspension
 gsettings set org.gnome.desktop.session idle-delay 0
 
-#No need to disable lock, because system continue to work in background
+#No need to disable screen-lock, because system continue to work in background
 #gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 

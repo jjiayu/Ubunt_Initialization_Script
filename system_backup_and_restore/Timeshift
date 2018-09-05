@@ -1,4 +1,4 @@
-Use Timeshift to backup and restore system files and settings
+Use Timeshift to backup and restore system files and settings, whereas user files are not touched
 https://github.com/teejee2008/timeshift
 
 In Ubuntu 16, select include hidden files to have user settings (e.g. bashrc) in the backup file

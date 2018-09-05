@@ -1,0 +1,34 @@
+Guide:
+https://ubuntuforums.org/showthread.php?t=35087
+
+NOTE:
+Better to exclude /media as well
+
+Remeber to write down somewhere what folders are excluded. We need to recreate these folders when we restore the backup.
+
+At the end of the process you might get a message along the lines of 'tar: Error exit delayed from previous errors' or something, but in most cases you can just ignore that.
+
+Alternatively, you can use Bzip2 to compress your backup. This means higher compression but lower speed. If compression is important to you, just substitute
+the 'z' in the command with 'j', and give the backup the right extension. 
+That would make the command look like this:
+tar cvpjf backup.tar.bz2 --exclude=/proc --exclude=/lost+found --exclude=/backup.tar.bz2 --exclude=/mnt --exclude=/sys /
+
+
+
+
+To restore:
+
+Use command:
+
+For tar: tar xvpfz backup.tgz -C /
+For bz2: tar xvpfj backup.tar.bz2 -C /
+
+WARNING: this will overwrite every single file on your partition with the one in the archive!
+
+Just make sure that, before you do anything else, you re-create the directories you excluded:
+Code:
+mkdir proc
+mkdir lost+found
+mkdir mnt
+mkdir sys
+etc...

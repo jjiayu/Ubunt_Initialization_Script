@@ -2,6 +2,6 @@ Use Timeshift to backup and restore system files and settings, whereas user file
 https://github.com/teejee2008/timeshift
 
 In Ubuntu 16, select include hidden files to have user settings (e.g. bashrc) in the backup file
-In Ubuntu 14, if necessary, may include root folder and home folder, but make sure to keep /home/username/*** folder not included in the backup list to maintain user settings and files (e.g. bashrc, Desktop, Documents). 
+In Ubuntu 14, user settings and files (e.g. bashrc, Desktop, Documents), do not put any folders
 
 Can restore with LiveCD by installing Timeshift into the LiveCD system

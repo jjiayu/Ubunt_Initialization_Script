@@ -1,0 +1,3 @@
+# Enable colored fonts in various of terminals (e.g. built-in terminal, terminator)
+
+Go to ~/.bashrc, uncommnet the line force_color_prompt = yes

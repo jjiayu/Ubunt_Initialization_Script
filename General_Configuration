@@ -1,3 +1,15 @@
 # Enable colored fonts in various of terminals (e.g. built-in terminal, terminator)
 
 Go to ~/.bashrc, uncommnet the line force_color_prompt = yes
+
+In terminaotor, right-click the background -> preferences -> general, to set font size to 12
+
+# Establish Thunderbird at Startup and minimize
+
+Go to "Startup Applications" (by search), add a new entry:
+Name: thunderbird
+Command: thunderbird
+
+Go to thunderbird -> tools -> add-on -> extension panel
+Find the webpage of "firetray" in a web browser, drag the green "download" button into the extension panel in thunderbird and install. 
+Open the settings of "firetray", select "start application hidden to tray"
